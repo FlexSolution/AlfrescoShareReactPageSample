@@ -1,0 +1,13 @@
+li {
+    list-style-type: circle !important;
+    list-style: outside !important;
+    margin: 10px;
+}
+
+.flex-main-div {
+    margin: 20px;
+}
+
+.flex-main-div ul .flex-ul {
+    margin: 20px !important;
+}

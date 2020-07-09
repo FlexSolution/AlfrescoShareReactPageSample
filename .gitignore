@@ -1,0 +1,5 @@
+*.iml
+/.idea/
+/_docker/logs.txt
+/alfresco-reactsample/target/
+/share-reactsample/target/

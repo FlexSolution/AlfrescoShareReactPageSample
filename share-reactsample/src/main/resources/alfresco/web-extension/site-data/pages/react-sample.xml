@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+    <title>React Sample</title>
+    <title-id>page.reactSample.title</title-id>
+    <description>React Sample with Redux(store,connect)</description>
+    <description-id>page.reactSample.description</description-id>
+    <template-instance>react-sample</template-instance>
+    <authentication>none</authentication>
+</page>

@@ -1,0 +1,24 @@
+<extension>
+    <modules>
+        <module>
+            <id>FlexSolution-ReactJS-lib</id>
+            <version>1.0</version>
+            <auto-deploy>true</auto-deploy>
+            <configurations>
+                <config evaluator="string-compare" condition="WebFramework" replace="false">
+                    <web-framework>
+                        <dojo-pages>
+                            <packages>
+                                <package name="react" location="js/lib" main="react"/>
+                                <package name="react-dom" location="js/lib" main="react-dom"/>
+                                <package name="redux" location="js/lib" main="redux"/>
+                                <package name="react-redux" location="js/lib" main="react-redux"/>
+                                <package name="react-components" location="js/lib/react-components"/>
+                            </packages>
+                        </dojo-pages>
+                    </web-framework>
+                </config>
+            </configurations>
+        </module>
+    </modules>
+</extension>

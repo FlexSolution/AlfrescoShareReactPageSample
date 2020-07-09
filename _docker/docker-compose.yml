@@ -1,0 +1,20 @@
+
+version: "2"
+
+services:
+    share-reactsample:
+        # image: alfresco/alfresco-share:6.2.0
+        build: ../share-reactsample
+        environment:
+            - JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006
+        ports:
+            - 8080:8080
+            - 5006:5006
+        volumes:
+            - ./../share-reactsample/_lib:/usr/local/tomcat/webapps/share/development/lib
+            - ./../share-reactsample/target/classes:/usr/local/tomcat/webapps/share/development/classes
+            - ./../share-reactsample/context.xml:/usr/local/tomcat/webapps/share/META-INF/context.xml
+            - ./../share-reactsample/src/main/resources/web:/usr/local/tomcat/webapps/share/development/web
+
+volumes:
+    alf_data-reactsample:

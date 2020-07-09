@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template-instance>
+    <template-type>org/alfresco/react-sample</template-type>
+    <components>
+
+        <component>
+            <region-id>react-sample</region-id>
+            <url>/components/share-reactsample/react-sample</url>
+        </component>
+
+    </components>
+</template-instance>
