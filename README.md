@@ -1,30 +1,17 @@
-Test on **alfresco-share:6.2.0**
+Test on ***Alfresco Share v6.2.0*** and ***Alfresco Share v5.2.f***
+
+Before running or deploy the project build the .js files with next command from folder 
+**${path_to_share_module}/src/main/resources/web/js/lib/react-components**:
+ - `npx babel ./ -d ./ --presets react-app/prod`
+
+If you did some changes in .jsx files please don't forget to compile .js files for successfully applying changes, use the command above.
 
 In order for deploy share amp file:
 add a project as maven project and run following command:
-**mvn clean package**
+ - `mvn clean package`
 
-Before running or deploy the project build the .js files with next command from folder **react-components**:
-**npx babel ./ -d ./ --presets react-app/prod**
+After build project take the .amp file from target folder **${path_to_share_module}/target/share-reactsample-1.0-SNAPSHOT.amp**
+and put it in your Alfresco server in the folder **${path_to_your_alfresco}/amps_share** 
 
-
-##How to setup environment:
-You need to have installed docker and configured to use without root privileges https://docs.docker.com/install
-
-1. Add **Remote** Debugger cofiguration.
-![](readme_resources/1-configuration.png)
-
-1. Configure **Before launch: Tool window** and point at **start.sh** or **start.bat** as executable script.
-(files within _docker folder should be executable).
-![](readme_resources/4-configuration.png)
-![](readme_resources/2-configuration.png)
-
-1. Point at **logs.txt** as logs file.
-![](readme_resources/3-configuration.png)
-
-All alfresco configuration placed in **docker-compose.yml**. You can place additional configuration there if you need
-
-To stop docker containers use **stop-all.sh** or **stop-all.bat** script.
-**start.sh|bat** script also stops containers and starts again
-
-To debug Share app java code create new **Remote** configuration. Use port 5006
+For apply .amp please follow to the next folder **${path_to_your_alfresco}/bin** and run script:
+ - `./apply_amps.sh`
