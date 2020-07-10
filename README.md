@@ -4,15 +4,15 @@ The project is a sample of how to integration React, Redux libraries into Alfres
 Keep in mind, this module developed only for Alfresco Share. 
 
 ### Compatibility
- 1. ***Alfresco Share v5.2.f***
- 2. ***Alfresco Share v6.2.0***
+ 1. Alfresco Share v5.2.f
+ 2. Alfresco Share v6.2.0
  
  
 ### Requirements
- 1. **Maven 3**
- 2. **NPM**
- 3. **babel**
- 4. **Java 8**
+ 1. Maven 3
+ 2. NPM
+ 3. babel
+ 4. Java 8
 
 ### How to build amp
 Before build .amp file you need to compile .js files. 
