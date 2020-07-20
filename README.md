@@ -1,4 +1,4 @@
-##React with Alfresco Share
+## React with Alfresco Share
 ![](readme_resources/react-sample.gif)
 
 ## Description
