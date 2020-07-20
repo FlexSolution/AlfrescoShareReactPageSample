@@ -1,3 +1,5 @@
+##React with Alfresco Share
+![](readme_resources/react-sample.gif)
 
 ## Description
 The project is a sample of how to integration React, Redux libraries into Alfresco Share. 
